@@ -1,6 +1,6 @@
 class CounterModel {
-  int counter;
+  int count;
   //constructor
-  CounterModel(this.counter);
+  CounterModel(this.count);
   //edicion prueba
 }
