@@ -1,14 +1,15 @@
-import 'package:appvacio/view_model/counter_viewmodel.dart';
-import 'package:appvacio/view_model/counter_viewmodel_two.dart';
+import 'package:appvacio/view_model/counter_viewmodel_two.dart'; // Import correcto
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class CounterViewTwo extends StatelessWidget {
   const CounterViewTwo({super.key});
+
   @override
   Widget build(BuildContext context) {
-    final counterViewModel = Provider.of<CounterViewModel>(context);
-    // TODO: implement build
+    // CAMBIA ESTO: Usar CounterViewModelTwo en lugar de CounterViewModel
+    final counterViewModel = Provider.of<CounterViewModelTwo>(context);
+
     return Scaffold(
         appBar: AppBar(
           title: Text("Contador de Usuarios"),
